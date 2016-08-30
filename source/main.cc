@@ -5,19 +5,19 @@
 
 int main(int argc, char** argv) {
 	
-	std::cout << "test before" << std::endl;
+    std::cout << "test before" << std::endl;
 
-	world_base::debug::LOGINFO("test info");
-	world_base::debug::LOGWARN("test warning");
-	world_base::debug::LOGERROR("test error");
-	world_base::debug::LOGCONFIG("test config");
+    world_base::debug::LOGINFO("test info");
+    world_base::debug::LOGWARN("test warning");
+    world_base::debug::LOGERROR("test error");
+    world_base::debug::LOGCONFIG("test config");
 
-	std::cout << "test after" << std::endl;
+    std::cout << "test after" << std::endl;
 
-	world_base::Game game;
+    world_base::Game game;
 
-	game.init("Test Wolrd");
+    game.init("Test Wolrd");
 
-	std::cin.get();
-	return game.run();
+    std::cin.get();
+    return game.run();
 }
