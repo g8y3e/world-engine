@@ -11,3 +11,4 @@ MIT
 [license-url]: LICENSE
 [docs-image]: https://img.shields.io/badge/docs-latest-blue.svg
 [docs-url]: https://g8y3e.github.io/world-engine/
+[lib-sdl-url]: https://www.libsdl.org/
