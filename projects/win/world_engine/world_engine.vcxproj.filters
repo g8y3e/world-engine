@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\world_base">
+      <UniqueIdentifier>{34fca8ba-362f-4271-916e-ecfa122bce2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\world_base\debug">
+      <UniqueIdentifier>{f77b49ea-2ef7-441d-bc88-0f3172b72daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\world_base">
+      <UniqueIdentifier>{e8bf44fc-7065-424a-b8ec-0de096c9966a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\world_base\debug">
+      <UniqueIdentifier>{cd347ff2-3a04-4b1a-8404-19de589e7688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\world_base\helper">
+      <UniqueIdentifier>{45e72e9c-01c5-4905-ba00-a9bf52399a67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\world_base\debug\log.cc">
+      <Filter>Source Files\world_base\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\world_base\game.cc">
+      <Filter>Source Files\world_base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\world_base\debug\log.h">
+      <Filter>Header Files\world_base\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\world_base\helper\define.h">
+      <Filter>Header Files\world_base\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\world_base\game.h">
+      <Filter>Header Files\world_base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
