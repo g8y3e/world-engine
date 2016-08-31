@@ -1,13 +1,18 @@
 #include "game.h"
 #include "debug/log.h"
+#include "helper/define.h"
 
 #include <string>
 
 namespace world_base {
-    void Game::init(const char* name) {
-        std::string init_message = "Init game '";
-        init_message.append(name).append("'!");
-        debug::LOGCONFIG(init_message);
+    Game::Game() {
+    }
+
+    Game::~Game() {
+    }
+
+    void Game::init() {
+        render_->init();
     }
 
     int Game::run() {

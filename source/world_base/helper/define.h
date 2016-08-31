@@ -14,10 +14,16 @@
     #elif defined(TARGET_OS_MAC)
         #define MAC_OS
     #endif
+#elif defined(__ANDROID__)
+    #define ANDROID_OS
 #elif defined(__linux__)
     #define LINUX_OS
 #elif defined(__unix__)
     #define UNIX_OS
 #else
     #define UNKNOWN_OS
+#endif
+
+#if defined(IPHONE_OS) || defined(IPHONE_SIMULATOR) || defined(ANDROID_OS)
+    #define MOBILE_OS
 #endif

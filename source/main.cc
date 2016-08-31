@@ -1,10 +1,14 @@
 #include <world_base/debug/log.h>
-#include <world_base/game.h>
+#include <test_game/test_game.h>
 
 #include<iostream>
 
+#include <string>
+#include <third_party/sdl2/SDL.h>
+
 int main(int argc, char** argv) {
-	
+    SDL_Log("");
+
     std::cout << "test before" << std::endl;
 
     world_base::debug::LOGINFO("test info");
@@ -14,9 +18,9 @@ int main(int argc, char** argv) {
 
     std::cout << "test after" << std::endl;
 
-    world_base::Game game;
+    test_game::TestGame game;
 
-    game.init("Test Wolrd");
+    game.init();
 
     std::cin.get();
     return game.run();

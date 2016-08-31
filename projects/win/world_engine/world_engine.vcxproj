@@ -72,6 +72,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir)..\..\..\source;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -93,6 +94,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -144,13 +146,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc" />
+    <ClCompile Include="..\..\..\source\test_game\test_game.cc" />
     <ClCompile Include="..\..\..\source\world_base\debug\log.cc" />
     <ClCompile Include="..\..\..\source\world_base\game.cc" />
+    <ClCompile Include="..\..\..\source\world_base\render\render.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\source\test_game\test_game.h" />
     <ClInclude Include="..\..\..\source\world_base\debug\log.h" />
     <ClInclude Include="..\..\..\source\world_base\game.h" />
     <ClInclude Include="..\..\..\source\world_base\helper\define.h" />
+    <ClInclude Include="..\..\..\source\world_base\render\render.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="world_engine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\icon\world.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

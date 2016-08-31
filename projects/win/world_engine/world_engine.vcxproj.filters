@@ -28,6 +28,18 @@
     <Filter Include="Header Files\world_base\helper">
       <UniqueIdentifier>{45e72e9c-01c5-4905-ba00-a9bf52399a67}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\world_base\render">
+      <UniqueIdentifier>{6b5247c5-36a8-499a-808f-3debf093a731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\world_base\render">
+      <UniqueIdentifier>{0ad9624c-faac-4ebb-9fe2-0da96182ab7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test_game">
+      <UniqueIdentifier>{611e874e-cfec-4a4b-8275-e81ad23cb4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test_game">
+      <UniqueIdentifier>{6f8414bf-3c93-4b2a-9a96-ca9c809d7fd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc">
@@ -38,6 +50,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\source\world_base\game.cc">
       <Filter>Source Files\world_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\world_base\render\render.cc">
+      <Filter>Source Files\world_base\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\test_game\test_game.cc">
+      <Filter>Source Files\test_game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -50,5 +68,24 @@
     <ClInclude Include="..\..\..\source\world_base\game.h">
       <Filter>Header Files\world_base</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\world_base\render\render.h">
+      <Filter>Header Files\world_base\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\test_game\test_game.h">
+      <Filter>Header Files\test_game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="world_engine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\icon\world.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
